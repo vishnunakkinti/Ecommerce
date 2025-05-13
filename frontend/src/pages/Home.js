@@ -5,7 +5,7 @@ function Home() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/api/products')
+    axios.get('http://65.2.143.39:3001/api/products')
       .then(res => setProducts(res.data));
   }, []);
 
